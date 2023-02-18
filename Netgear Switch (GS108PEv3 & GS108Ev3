@@ -1,0 +1,10 @@
+Vulnerability: If admin is signed into a session on a device on the LAN, accessing the same switch from another device on the same LAN will automatically log user in without requiring additoinal authentication.
+
+Tested on:
+
+Bootloader Version	V2.06.01
+Firmware Version	V2.06.16EN
+
+Potential Exploit: Malicious actor could access system at a time when the admin was logged in, potentially allowing settings to be change to allow for further exploitation.
+
+Note: While the system does not require additional authentication from the second device, the session does not divulge the current password, rendering the possibility of changing the existing password inert.
